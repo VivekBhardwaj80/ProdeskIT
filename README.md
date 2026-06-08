@@ -67,7 +67,7 @@ Add your project screenshot here after deployment.
 Add your deployed URL here.
 
 ```text
-https://your-live-project-url.vercel.app
+https://prodesk-it-landing-page-ten.vercel.app/
 ```
 
 ---
