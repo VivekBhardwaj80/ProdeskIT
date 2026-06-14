@@ -4,39 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cash-Flow</title>
-    <link rel="stylesheet" href="/Cash-Flow/style.css">
+    <title>Cash Flow Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
 </head>
 
 <body>
-    <h1>Cash-Flow Tracker</h1>
 
-    <!-- Salary Input -->
-    <div>
-        <label>Total Salary</label>
-        <input type="number" id="salary" placeholder="Enter your salary">
+    <div class="container">
+
+        <h1>Cash Flow Tracker</h1>
+
+        <div class="input-group">
+            <label>Total Salary</label>
+            <input type="number" id="salary" placeholder="Enter Salary">
+        </div>
+
+        <div class="input-group">
+            <label>Expense Name</label>
+            <input type="text" id="expenseName" placeholder="Expense Name">
+        </div>
+
+        <div class="input-group">
+            <label>Expense Amount</label>
+            <input type="number" id="expenseAmount" placeholder="Expense Amount">
+        </div>
+
+        <button id="addExpenseBtn">
+            Add Expense
+        </button>
+
+        <button id="downloadBtn">
+            Download Report
+        </button>
+
+        <div class="input-group">
+            <label>Currency</label>
+
+            <select id="currency">
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+            </select>
+        </div>
+
+        <div class="summary">
+
+            <h3>
+                Salary :
+                <span id="salaryDisplay">0</span>
+            </h3>
+
+            <h3>
+                Total Expenses :
+                <span id="expenseDisplay">0</span>
+            </h3>
+
+            <h3>
+                Remaining Balance :
+                <span id="balanceDisplay">0</span>
+            </h3>
+
+            <div id="warning"></div>
+
+        </div>
+
+        <h2>Expense List</h2>
+
+        <ul id="expenseList"></ul>
+
+        <canvas id="myChart"></canvas>
+
     </div>
 
-    <!-- Expense Name Input -->
-    <div>
-        <label>Expense Name</label>
-        <input type="text" id="expenseName" placeholder="Enter expense name">
-    </div>
+    <script src="script.js"></script>
 
-    <!-- Expense Amount Input -->
-    <div>
-        <label>Expense Amount</label>
-        <input type="number" id="expenseAmount" placeholder="Enter expense amount">
-    </div>
-
-    <!-- Button -->
-    <button id="addExpenseBtn">
-        Add Expense
-    </button>
-
-    <!-- Output Area -->
-    <div id="expenseList"></div>
-    <div id="balance"></div>
 </body>
-<script src="script.js"></script>
+
 </html>
