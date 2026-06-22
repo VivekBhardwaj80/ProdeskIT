@@ -68,7 +68,7 @@ project-folder/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/dev-detective.git
+git clone https://github.com/VivekBhardwaj80/ProdeskIT/tree/main/The-API-Hunter
 ```
 
 ### Move into the project folder
