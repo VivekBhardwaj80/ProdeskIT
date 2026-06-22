@@ -89,6 +89,12 @@ in your browser.
 
 ---
 
+## Live Demo
+
+```text
+https://the-api-hunter.vercel.app/
+```
+
 ## 🔗 GitHub API Endpoints Used
 
 ### User Information
