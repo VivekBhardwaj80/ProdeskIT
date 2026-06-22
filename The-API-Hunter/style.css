@@ -1,0 +1,252 @@
+Google Font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:#141d2f;
+    color:white;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+}
+
+/* Title */
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+/* Mode Buttons */
+
+.mode-toggle{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    margin-bottom:25px;
+}
+
+.mode-toggle button,
+.single-search button,
+.battle-search button{
+    border:none;
+    background:#0079ff;
+    color:white;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.mode-toggle button:hover,
+.single-search button:hover,
+.battle-search button:hover{
+    background:#005fd1;
+}
+
+/* Search Areas */
+
+.single-search,
+.battle-search{
+    display:flex;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.single-search input,
+.battle-search input{
+    flex:1;
+    border:none;
+    outline:none;
+    background:#1e2a47;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+    font-size:16px;
+}
+
+/* Loading */
+
+.loading{
+    text-align:center;
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+/* Error */
+
+.error{
+    text-align:center;
+    color:#ff4b4b;
+    margin-bottom:20px;
+}
+
+/* Profile Card */
+
+.profile-card{
+    background:#1e2a47;
+    padding:30px;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.avatar{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.name{
+    font-size:28px;
+    font-weight:600;
+}
+
+.bio{
+    color:#c4c4c4;
+}
+
+.joined-date{
+    color:#b0b0b0;
+}
+
+.portfolio{
+    color:#0079ff;
+    text-decoration:none;
+}
+
+.portfolio:hover{
+    text-decoration:underline;
+}
+
+/* Repo Section */
+
+.repo-section{
+    background:#1e2a47;
+    padding:25px;
+    border-radius:20px;
+    margin-bottom:30px;
+}
+
+.repo-section h2{
+    margin-bottom:20px;
+}
+
+.repo-list{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.repo-list a{
+    text-decoration:none;
+    color:white;
+    background:#141d2f;
+    padding:15px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.repo-list a:hover{
+    background:#0079ff;
+}
+
+/* Battle Result */
+
+.battle-result{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+/* Winner */
+
+.winner-card{
+    background:#1e2a47;
+    border:3px solid #00c853;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+}
+
+.winner-avatar{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    margin:20px 0;
+}
+
+.winner-name{
+    margin-bottom:10px;
+}
+
+.winner-stars{
+    color:#00c853;
+    font-size:18px;
+}
+
+/* Loser */
+
+.loser-card{
+    background:#1e2a47;
+    border:3px solid #ff5252;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+}
+
+.loser-avatar{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    margin:20px 0;
+}
+
+.loser-name{
+    margin-bottom:10px;
+}
+
+.loser-stars{
+    color:#ff5252;
+    font-size:18px;
+}
+
+/* Utility */
+
+.hidden{
+    display:none;
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+    .single-search,
+    .battle-search{
+        flex-direction:column;
+    }
+
+    .battle-result{
+        grid-template-columns:1fr;
+    }
+
+}   

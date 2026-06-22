@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detective</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>The API Hunter</h1>
+
+        <div class="mode-toggle">
+            <button id="singleModeBtn">Single User</button>
+            <button id="battleModeBtn">Battle Mode</button>
+        </div>
+
+        <div class="single-search">
+            <input
+                type="text"
+                id="usernameInput"
+                placeholder="Enter GitHub Username"
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+        </div>
+
+        <div class="battle-search hidden">
+
+            <input
+                type="text"
+                id="player1"
+                placeholder="Enter First Username"
+            >
+
+            <input
+                type="text"
+                id="player2"
+                placeholder="Enter Second Username"
+            >
+
+            <button id="battleBtn">
+                Battle
+            </button>
+
+        </div>
+
+        <div class="loading hidden">
+            Loading...
+        </div>
+
+        <div class="error hidden">
+            User Not Found
+        </div>
+
+        <div class="profile-card hidden">
+
+            <img src="" alt="avatar" class="avatar">
+
+            <h2 class="name"></h2>
+
+            <p class="bio"></p>
+
+            <p class="joined-date"></p>
+
+            <a class="portfolio" target="_blank">
+                Visit Portfolio
+            </a>
+
+        </div>
+
+        <div class="repo-section hidden">
+
+            <h2>Latest Repositories</h2>
+
+            <div class="repo-list">
+
+
+            </div>
+
+        </div>
+
+        <div class="battle-result hidden">
+
+            <div class="winner-card">
+
+                <h2>Winner 🟢</h2>
+
+                <img src="" alt="" class="winner-avatar">
+
+                <h3 class="winner-name"></h3>
+
+                <p class="winner-stars"></p>
+
+            </div>
+
+            <div class="loser-card">
+
+                <h2>Loser 🔴</h2>
+
+                <img src="" alt="" class="loser-avatar">
+
+                <h3 class="loser-name"></h3>
+
+                <p class="loser-stars"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
