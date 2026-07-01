@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>
+        AI Cover Letter Generator
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>
+            AI Cover Letter Generator
+        </h1>
+
+        <form id="coverForm">
+
+            <input id="name" placeholder="Candidate Name" required>
+
+            <input id="role" placeholder="Job Role" required>
+
+            <input id="company" placeholder="Target Company" required>
+
+            <textarea id="skills" placeholder="Key Skills" required></textarea>
+
+            <input type="file" id="resume" accept=".pdf">
+
+            <button>
+                Generate
+            </button>
+
+        </form>
+
+        <div id="loading" class="hide">
+
+            Generating...
+
+        </div>
+
+        <div class="result">
+
+            <button id="copy">
+                Copy
+            </button>
+
+            <div id="output">
+                Your generated cover letter appears here
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.5.136/pdf.min.mjs" type="module"></script>
+
+    <script src="script.js" type="module"></script>
+
+</body>
+
+</html>
