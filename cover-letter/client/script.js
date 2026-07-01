@@ -32,7 +32,7 @@ form.addEventListener(
       }
 
       const res = await fetch(
-        "https://cover-letter-api-u6tn.onrender.com",
+        "https://cover-letter-api-u6tn.onrender.com/generate",
 
         {
           method: "POST",
